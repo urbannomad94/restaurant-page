@@ -1,0 +1,158 @@
+:root {
+  --color1: rgb(244, 224, 83);
+  --color2: rgb(219, 60, 58);
+}
+
+html,
+body {
+  box-sizing: border-box;
+  background-color: var(--color1);
+  font-size: 10px;
+  color: var(--color2);
+  font-family: "Roboto", sans-serif;
+}
+
+nav button {
+  background-color: var(--color1);
+  border: 5px solid var(--color2);
+  border-radius: 10px;
+  color: var(--color2);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+nav button:hover,
+.selected {
+  background-color: var(--color2);
+  border: 5px solid var(--color1);
+  color: var(--color1);
+}
+
+nav li {
+  list-style: none;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container > img {
+  height: 20rem;
+}
+
+h1 {
+  font-size: 6rem;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+.page-tab {
+  padding: 40px;
+}
+
+.home-tab {
+  display: flex;
+  gap: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+section img {
+  margin-top: 25px;
+  border: 3px solid var(--color2);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 3;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color2);
+  color: var(--color1);
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.menu-item h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.menu-item span {
+  text-align: right;
+  font-size: 2.5rem;
+}
+
+.menu-item p {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 45rem;
+}
+
+.hamburger {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cheeseburger {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.bacon-cheeseburger {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.veggie-burger {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.fries {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.drink {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.contact-tab {
+  font-size: 3rem;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
